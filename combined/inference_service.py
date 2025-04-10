@@ -54,7 +54,7 @@ def predict_url(url: str) -> int:
     # best threshold value according to the roc curve
     return int(pred <= 0.0218)
 
-# Set up Flask app
+
 app = Flask(__name__)
 
 @app.route("/predict-url", methods=["POST"])
